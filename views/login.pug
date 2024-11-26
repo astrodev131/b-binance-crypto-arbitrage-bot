@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description', content='Crypto Triangluar Arbitrage Bot')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Sign In | Crypto Triangluar Arbitrage Bot
+    link(rel='shortcut icon' href='favicon.ico')
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/signin.css')
+  body(class='text-center')
+    form(class='form-signin' method='post')
+      if message != ''
+        p(class='alert alert-danger') #{message}
+      label(for='email' class='sr-only') Email address
+      input(type='email' id='email' name='email' class='form-control mb-4' placeholder='Email address' required autofocus)
+      label(for='password' class='sr-only') Password
+      input(type='password' id='password' name='password' class='form-control mb-4' placeholder='Password' required)
+      div(class='d-flex justify-content-around')
+        button(class='btn btn-primary mb-4' type='submit') Sign in
